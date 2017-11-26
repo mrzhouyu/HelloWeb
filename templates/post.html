@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block header %}
+    <h3>{{ post.title }}</h3>
+    <p style="font-size: 20px;">
+        <a href="/read">回首页</a>
+    </p>
+{% endblock header%}
+
+{% block content %}
+    <p style="font-size: 18px;">
+    {{ post.body }}
+    </p>
+{% endblock content%}
